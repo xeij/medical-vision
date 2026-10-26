@@ -1,0 +1,8 @@
+# Paths are relative to the repo root.
+datasets_dir: datasets
+artifacts_dir: artifacts
+splits_dir: splits
+image_size: 518        # shortest side, px; RAD-DINO's native input, others downsample from it
+seed: 0
+val_fraction: 0.1      # of non-test patients
+test_fraction: 0.2     # of patients, only for datasets without an official test list (IU)
