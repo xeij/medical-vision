@@ -1,0 +1,27 @@
+\begin{footnotesize}
+\begin{tabular}{llcccccc}
+\toprule
+& & \multicolumn{3}{c}{trained on NIH} & \multicolumn{3}{c}{trained on IU} \\
+\cmidrule(lr){3-5} \cmidrule(lr){6-8}
+encoder & head & ID & OOD & ID $-$ OOD & ID & OOD & ID $-$ OOD \\
+\midrule
+ResNet-50 & probe & 0.714 & 0.826 & \begin{tabular}[t]{@{}c@{}}-0.112\\{\tiny[-0.170, -0.027]}\end{tabular} & 0.748 & 0.590 & \begin{tabular}[t]{@{}c@{}}+0.158\\{\tiny[0.082, 0.233]}\end{tabular} \\
+ResNet-50 & kNN$_{5}$ & 0.558 & 0.541 & \begin{tabular}[t]{@{}c@{}}+0.017\\{\tiny[-0.029, 0.052]}\end{tabular} & 0.558 & 0.524 & \begin{tabular}[t]{@{}c@{}}+0.034\\{\tiny[0.010, 0.058]}\end{tabular} \\
+ResNet-50 & kNN$_{20}$ & 0.614 & 0.598 & \begin{tabular}[t]{@{}c@{}}+0.016\\{\tiny[-0.059, 0.067]}\end{tabular} & 0.595 & 0.548 & \begin{tabular}[t]{@{}c@{}}+0.046\\{\tiny[0.016, 0.078]}\end{tabular} \\
+ResNet-50 & kNN$_{50}$ & 0.642 & 0.673 & \begin{tabular}[t]{@{}c@{}}-0.031\\{\tiny[-0.106, 0.049]}\end{tabular} & 0.629 & 0.567 & \begin{tabular}[t]{@{}c@{}}+0.062\\{\tiny[0.011, 0.124]}\end{tabular} \\
+DINOv2 & probe & 0.750 & 0.795 & \begin{tabular}[t]{@{}c@{}}-0.044\\{\tiny[-0.118, 0.045]}\end{tabular} & 0.718 & 0.628 & \begin{tabular}[t]{@{}c@{}}+0.090\\{\tiny[0.007, 0.173]}\end{tabular} \\
+DINOv2 & kNN$_{5}$ & 0.564 & 0.534 & \begin{tabular}[t]{@{}c@{}}+0.030\\{\tiny[0.004, 0.053]}\end{tabular} & 0.541 & 0.524 & \begin{tabular}[t]{@{}c@{}}+0.017\\{\tiny[-0.007, 0.043]}\end{tabular} \\
+DINOv2 & kNN$_{20}$ & 0.617 & 0.546 & \begin{tabular}[t]{@{}c@{}}+0.071\\{\tiny[0.017, 0.113]}\end{tabular} & 0.613 & 0.543 & \begin{tabular}[t]{@{}c@{}}+0.069\\{\tiny[0.026, 0.121]}\end{tabular} \\
+DINOv2 & kNN$_{50}$ & 0.646 & 0.604 & \begin{tabular}[t]{@{}c@{}}+0.043\\{\tiny[-0.035, 0.114]}\end{tabular} & 0.607 & 0.554 & \begin{tabular}[t]{@{}c@{}}+0.053\\{\tiny[0.011, 0.109]}\end{tabular} \\
+BiomedCLIP & probe & 0.771 & 0.832 & \begin{tabular}[t]{@{}c@{}}-0.062\\{\tiny[-0.115, -0.001]}\end{tabular} & 0.848 & 0.696 & \begin{tabular}[t]{@{}c@{}}+0.152\\{\tiny[0.098, 0.199]}\end{tabular} \\
+BiomedCLIP & kNN$_{5}$ & 0.619 & 0.636 & \begin{tabular}[t]{@{}c@{}}-0.017\\{\tiny[-0.085, 0.036]}\end{tabular} & 0.649 & 0.612 & \begin{tabular}[t]{@{}c@{}}+0.036\\{\tiny[0.008, 0.063]}\end{tabular} \\
+BiomedCLIP & kNN$_{20}$ & 0.694 & 0.715 & \begin{tabular}[t]{@{}c@{}}-0.021\\{\tiny[-0.105, 0.061]}\end{tabular} & 0.752 & 0.661 & \begin{tabular}[t]{@{}c@{}}+0.091\\{\tiny[0.025, 0.161]}\end{tabular} \\
+BiomedCLIP & kNN$_{50}$ & 0.728 & 0.730 & \begin{tabular}[t]{@{}c@{}}-0.003\\{\tiny[-0.091, 0.087]}\end{tabular} & 0.760 & 0.678 & \begin{tabular}[t]{@{}c@{}}+0.083\\{\tiny[0.017, 0.151]}\end{tabular} \\
+RAD-DINO & probe & 0.815 & 0.869 & \begin{tabular}[t]{@{}c@{}}-0.054\\{\tiny[-0.110, 0.017]}\end{tabular} & 0.893 & 0.717 & \begin{tabular}[t]{@{}c@{}}+0.176\\{\tiny[0.139, 0.211]}\end{tabular} \\
+RAD-DINO & kNN$_{5}$ & 0.654 & 0.707 & \begin{tabular}[t]{@{}c@{}}-0.052\\{\tiny[-0.126, 0.015]}\end{tabular} & 0.711 & 0.625 & \begin{tabular}[t]{@{}c@{}}+0.086\\{\tiny[0.028, 0.160]}\end{tabular} \\
+RAD-DINO & kNN$_{20}$ & 0.737 & 0.767 & \begin{tabular}[t]{@{}c@{}}-0.030\\{\tiny[-0.100, 0.051]}\end{tabular} & 0.750 & 0.674 & \begin{tabular}[t]{@{}c@{}}+0.075\\{\tiny[0.012, 0.147]}\end{tabular} \\
+RAD-DINO & kNN$_{50}$ & 0.770 & 0.817 & \begin{tabular}[t]{@{}c@{}}-0.047\\{\tiny[-0.107, 0.033]}\end{tabular} & 0.801 & 0.698 & \begin{tabular}[t]{@{}c@{}}+0.104\\{\tiny[0.036, 0.168]}\end{tabular} \\
+ResNet-50 & fine-tuned & 0.814 & 0.877 & \begin{tabular}[t]{@{}c@{}}-0.063\\{\tiny[-0.109, 0.005]}\end{tabular} & 0.788 & 0.651 & \begin{tabular}[t]{@{}c@{}}+0.137\\{\tiny[0.075, 0.200]}\end{tabular} \\
+\bottomrule
+\end{tabular}
+\end{footnotesize}

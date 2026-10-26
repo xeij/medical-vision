@@ -1,0 +1,16 @@
+\begin{footnotesize}
+\begin{tabular}{lcccccc}
+\toprule
+& & & \multicolumn{4}{c}{pointing game per label} \\
+\cmidrule(lr){4-7}
+model & pointing & energy & atelectasis & cardiomegaly & effusion & pneumothorax \\
+\midrule
+FT, NIH-trained & \begin{tabular}[t]{@{}c@{}}0.445\\{\tiny[0.402, 0.492]}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.345\\{\tiny[0.313, 0.378]}\end{tabular} & 0.325 & 0.934 & 0.340 & 0.097 \\
+FT, IU-trained & \begin{tabular}[t]{@{}c@{}}0.339\\{\tiny[0.296, 0.384]}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.275\\{\tiny[0.243, 0.307]}\end{tabular} & 0.111 & 0.890 & 0.255 & 0.067 \\
+frozen, NIH probe & \begin{tabular}[t]{@{}c@{}}0.222\\{\tiny[0.187, 0.258]}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.157\\{\tiny[0.141, 0.171]}\end{tabular} & 0.100 & 0.466 & 0.190 & 0.134 \\
+frozen, IU probe & \begin{tabular}[t]{@{}c@{}}0.160\\{\tiny[0.130, 0.192]}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.134\\{\tiny[0.120, 0.148]}\end{tabular} & 0.067 & 0.322 & 0.170 & 0.072 \\
+\midrule
+chance (uniform map) & 0.108 & 0.108 & 0.043 & 0.233 & 0.090 & 0.070 \\
+\bottomrule
+\end{tabular}
+\end{footnotesize}
