@@ -1,0 +1,17 @@
+\begin{footnotesize}
+\begin{tabular}{llcccc}
+\toprule
+encoder & head & ceiling & 1\% (26) & 10\% (259) & 100\% (2,594) \\
+\midrule
+ResNet-50 & probe & 0.714 & \begin{tabular}[t]{@{}c@{}}0.508 (+0.205)\\{\tiny[0.192, 0.217]}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.589 (+0.125)\\{\tiny[0.114, 0.136]}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.590 (+0.124)\\{\tiny[0.113, 0.134]}\end{tabular} \\
+ResNet-50 & kNN$_{50}$ & 0.642 & \begin{tabular}[t]{@{}c@{}}0.500 (+0.142)\\{\tiny[0.133, 0.152]}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.574 (+0.069)\\{\tiny[0.058, 0.079]}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.567 (+0.075)\\{\tiny[0.063, 0.087]}\end{tabular} \\
+DINOv2 & probe & 0.750 & \begin{tabular}[t]{@{}c@{}}0.537 (+0.213)\\{\tiny[0.203, 0.223]}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.596 (+0.155)\\{\tiny[0.143, 0.167]}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.628 (+0.123)\\{\tiny[0.114, 0.132]}\end{tabular} \\
+DINOv2 & kNN$_{50}$ & 0.646 & \begin{tabular}[t]{@{}c@{}}0.500 (+0.146)\\{\tiny[0.137, 0.157]}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.561 (+0.085)\\{\tiny[0.075, 0.096]}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.554 (+0.092)\\{\tiny[0.082, 0.103]}\end{tabular} \\
+BiomedCLIP & probe & 0.771 & \begin{tabular}[t]{@{}c@{}}0.592 (+0.179)\\{\tiny[0.171, 0.187]}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.679 (+0.091)\\{\tiny[0.083, 0.099]}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.696 (+0.075)\\{\tiny[0.067, 0.082]}\end{tabular} \\
+BiomedCLIP & kNN$_{50}$ & 0.728 & \begin{tabular}[t]{@{}c@{}}0.500 (+0.228)\\{\tiny[0.219, 0.236]}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.666 (+0.062)\\{\tiny[0.054, 0.070]}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.678 (+0.050)\\{\tiny[0.042, 0.058]}\end{tabular} \\
+RAD-DINO & probe & 0.815 & \begin{tabular}[t]{@{}c@{}}0.553 (+0.261)\\{\tiny[0.250, 0.271]}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.632 (+0.183)\\{\tiny[0.172, 0.193]}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.717 (+0.098)\\{\tiny[0.088, 0.107]}\end{tabular} \\
+RAD-DINO & kNN$_{50}$ & 0.770 & \begin{tabular}[t]{@{}c@{}}0.500 (+0.270)\\{\tiny[0.261, 0.278]}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.627 (+0.143)\\{\tiny[0.131, 0.154]}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.698 (+0.072)\\{\tiny[0.063, 0.081]}\end{tabular} \\
+ResNet-50 & fine-tuned & 0.814 & \begin{tabular}[t]{@{}c@{}}0.512 (+0.302)\\{\tiny[0.291, 0.314]}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.574 (+0.240)\\{\tiny[0.230, 0.250]}\end{tabular} & \begin{tabular}[t]{@{}c@{}}0.651 (+0.162)\\{\tiny[0.153, 0.171]}\end{tabular} \\
+\bottomrule
+\end{tabular}
+\end{footnotesize}
